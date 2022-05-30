@@ -4,6 +4,8 @@ FROM golang:1.16-buster as build
 WORKDIR /go/src/app
 ADD src /go/src/app
 ENV CGO_ENABLED=0 GOOS=linux GOARCH=amd64
+RUN go mod download
+RUN go mod tidy
 RUN go build -ldflags="-s -w" -o /go/bin/app
 
 # Now copy it into our base image.

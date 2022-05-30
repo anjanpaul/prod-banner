@@ -4,6 +4,9 @@
   // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
   "configurations": [
+    
+    
+
     {
       "name": "Launch Package",
       "type": "go",
@@ -15,6 +18,10 @@
       "env": {
         "BANNER_MONGOURI": "mongodb+srv://mahir_tazwar337:SandBook@cluster0.bax6h.mongodb.net/golang-API?retryWrites=true&w=majority?retryWrites=true&w=majority",
         "BANNER_CORSPERMITED": "http://localhost:3000"
+        
+        
+      
+
       }
     }
   ]
